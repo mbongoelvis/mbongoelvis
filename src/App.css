@@ -1,0 +1,39 @@
+.top, .middel, .bottom{
+  transition: all .3s linear;
+}
+.top-active{
+  transform: rotate(45deg) translateY(12px);
+}
+.bottom-active{
+  transform: rotate(-45deg) translateY(-10px);
+}
+.middel-active{
+  opacity: 0;
+}
+.hero-me{
+  filter: grayscale(80%);
+}
+.cursor{
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  backdrop-filter: blur(3px);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 500px;
+  border: 1px solid gray;
+  transition: transform .3s linear;
+  transform-origin: 100% 100%;
+}
+.cursor-grow{
+  transform: scale(2.5);
+  background-color: black;
+  border: none;
+}
+.mobile-menu{
+  transition: .7s linear ease-in-out;
+  transform-origin: top;
+}
