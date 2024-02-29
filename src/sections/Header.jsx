@@ -18,12 +18,12 @@ export const Header = () => {
       <nav className="container px-2 lg:px-0 min-h-[70px] mx-auto flex items-center justify-between">
         <div className="logo">
           <img
-            src="./public/smallLogo.png"
+            src="smallLogo.png"
             alt="Logo"
             className="lg:hidden cursor-pointer ld ld-blur-in"
           />
           <img
-            src="./public/main logo.png"
+            src="main logo.png"
             alt="Logo"
             className="hidden lg:block cursor-pointer ld ld-blur-in"
           />
@@ -36,11 +36,11 @@ export const Header = () => {
           <a href="#about" className="link">
             About
           </a>
-          <a href="projects" className="link">
+          <a href="#projects" className="link">
             Project
           </a>
           <a
-            href="./public/MBONGO Elvis M Web Developer +237671267490-4.pdf"
+            href="MBONGO Elvis M Web Developer +237671267490-4.pdf"
             className="link"
             download
           >
@@ -101,7 +101,7 @@ export const Header = () => {
             <a href="#about" className="mobile-link">
               About
             </a>
-            <a href="#" className="mobile-link">
+            <a href="#projects" className="mobile-link">
               Project
             </a>
             <a

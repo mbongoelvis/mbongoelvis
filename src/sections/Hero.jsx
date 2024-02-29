@@ -8,17 +8,17 @@ export const Hero = () => {
               WEB DEVELOPER
             </p>
             <img
-              src="./public/Vector-dot.png"
+              src="Vector-dot.png"
               alt=""
               className="absolute left-[40%] lg:left-[40%] md:left-[70%] top-[60%]"
             />
             <img
-              src="./public/Vector-square.png"
+              src="Vector-square.png"
               alt=""
               className="absolute top-[40%] lg:top-[30%] lg:left-[55%] md:left-[80%]"
             />
             <img
-              src="./public/shape5 1.png"
+              src="shape5 1.png"
               alt=""
               className="absolute bottom-5 lg:top-[70%] md:bottom-[9rem]"
             />
@@ -41,7 +41,7 @@ export const Hero = () => {
               </div>
               <div className="flex-1 relative overflow-hidden">
                 <img
-                  src="./public/me2.png"
+                  src="me2.png"
                   className="min-w-[100%] lg:mt-[3rem] hero-me"
                   alt="hero"
                 />
