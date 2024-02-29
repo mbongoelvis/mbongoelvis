@@ -1,10 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 export const Header = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    
+  const [isOpen, setIsOpen] = useState(false);
+  const cursor = useRef(null);
+
+  useEffect(() => {
+    const userCursor = cursor.current;
+    // getting the client x and y coordinates
+    document.addEventListener("mousemove", (e) => {
+      userCursor.style.left = `${e.clientX}` + "px";
+      userCursor.style.top = `${e.clientY}` + "px";
+    });
+  });
   return (
-    <div className="sticky top-0 left-0 bg-white z-[2]">
+    <div className="fixed top-0 left-0 w-full bg-white z-[2]">
       {/* nav bar */}
       <nav className="container px-2 lg:px-0 min-h-[70px] mx-auto flex items-center justify-between">
         <div className="logo">
@@ -27,7 +36,7 @@ export const Header = () => {
           <a href="#about" className="link">
             About
           </a>
-          <a href="#" className="link">
+          <a href="projects" className="link">
             Project
           </a>
           <a
@@ -38,7 +47,7 @@ export const Header = () => {
             Download CV
           </a>
           {/* cursor */}
-          <div className="cursor"></div>
+          <div className="cursor" ref={cursor}></div>
         </div>
         {/* lets talk btn */}
         <a

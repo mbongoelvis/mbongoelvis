@@ -8,7 +8,7 @@ import { Projects } from "./sections/Projects";
 
 function App() {
   return (
-    <div className="wrapper w-full min-h-screen bg-main">
+    <div className="wrapper w-full min-h-screen bg-main overflow-hidden">
       <Header />
       <Hero />
       <About />
