@@ -1,15 +1,22 @@
-import React from 'react'
-import { useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 
 export const Contact = () => {
     const time = useRef(null)
 
-    useRef(() => {
-        const currentTime = time.current;
-        let date = new Date()
+    useEffect(() => {
+      let currentTime = time.current;
+      let date = new Date()
+      let hours = date.getHours()
+      let minutes = date.getMinutes()
 
-        console.log(data);
+      if (hours >= 12) {
+        currentTime.textContent = hours + ":" + minutes + " PM";
+      } else {
+        currentTime.textContent = hours + ":" + minutes + " AM";
+      }
+
     })
+  
   return (
     <div>
       <div class="w-full min-h-screen" id="lets-talk">
@@ -57,7 +64,6 @@ export const Contact = () => {
                   class="mt-3 outline-none border-b-2 w-full"
                   id="message"
                   placeholder="Enter message here"
-                  id=""
                   cols="30"
                   rows="10"
                 ></textarea>
@@ -83,11 +89,11 @@ export const Contact = () => {
                 target="_blank"
                 class="flex items-center gap-2 mb-5"
               >
-                <img src="./public/whatsapp.png" class="w-6" alt="" />
+                <img src="whatsapp.png" class="w-6" alt="" />
                 <p>Whatsapp</p>
               </a>
               <a href="#" target="_blank" class="flex items-center gap-2 mb-5">
-                <img src="./public/instagram(1).png" class="w-6" alt="" />
+                <img src="instagram(1).png" class="w-6" alt="" />
                 <p>Instagram</p>
               </a>
               <a
@@ -95,7 +101,7 @@ export const Contact = () => {
                 target="_blank"
                 class="flex items-center gap-2 mb-5"
               >
-                <img src="./public/github(1).png" class="w-6" alt="" />
+                <img src="github(1).png" class="w-6" alt="" />
                 <p>Github</p>
               </a>
               <a
@@ -103,14 +109,16 @@ export const Contact = () => {
                 target="_blank"
                 class="flex items-center gap-2"
               >
-                <img src="./public/linkedin(1).png" class="w-6" alt="" />
+                <img src="linkedin(1).png" class="w-6" alt="" />
                 <p>LinkedIn</p>
               </a>
             </div>
             <div>
               <h2 class="text-3xl font-bold mb-4">Location</h2>
               <p class="mt-3 text-xl opacity-[.6]">SouthWest, Cameroon</p>
-              <p class="mt-3 text-xl opacity-[.6] time">12:45 PM</p>
+              <p class="mt-3 text-xl opacity-[.6] time" ref={time}>
+                12:45 PM
+              </p>
             </div>
           </div>
         </div>
