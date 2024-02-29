@@ -3,7 +3,7 @@ import React from 'react'
 export const Hero = () => {
     return (
         <div>
-          <div className="w-full h-screen relative pt-12">
+          <div className="w-full min-h-screen relative pt-12">
             <p className="absolute text-[11.2vw] left-[2%] mt-5 md:mt-0 font-bold opacity-30">
               WEB DEVELOPER
             </p>
