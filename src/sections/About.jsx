@@ -14,13 +14,13 @@ export const About = () => {
           </div>
 
           <img
-            src="./public/shape5 1.png"
+            src="shape5 1.png"
             className="absolute -right-[30px] w-[45vw] lg:w-[25vw] lg:top-[12rem] top-[5rem]"
             alt=""
           />
           <div className="container mx-auto min-h-12 mt-[12rem] grid lg:grid-cols-2 grid-cols-1">
             <div className="mb-12 lg:mb-0 flex items-center justify-center">
-              <img src="./public/sideImage.png" alt="" />
+              <img src="sideImage.png" alt="" />
             </div>
             <div className="flex flex-col justify-center item-center min-h-12">
               <h1 className="text-[15vw] md:text-[8vw] lg:text-[5vw] font-bold text-center lg:text-start">
