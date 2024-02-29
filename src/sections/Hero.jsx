@@ -3,8 +3,8 @@ import React from 'react'
 export const Hero = () => {
     return (
         <div>
-          <div className="w-full relative pt-12">
-            <p className="absolute text-[11.2vw] left-[2%] font-bold opacity-30">
+          <div className="w-full h-screen relative pt-12">
+            <p className="absolute text-[11.2vw] left-[2%] mt-5 md:mt-0 font-bold opacity-30">
               WEB DEVELOPER
             </p>
             <img
@@ -39,10 +39,10 @@ export const Hero = () => {
                   integrating development and design.
                 </p>
               </div>
-              <div className="flex-1 relative overflow-hidden">
+              <div className="flex-1 lg:mt-3 h-full overflow-hidden">
                 <img
                   src="me2.png"
-                  className="min-w-[100%] lg:mt-[3rem] hero-me"
+                  className="min-w-[100%] lg:mt-[3.8rem] hero-me"
                   alt="hero"
                 />
               </div>
