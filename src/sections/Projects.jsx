@@ -25,13 +25,13 @@ export const Projects = () => {
               Country Infomations
             </p>
             <div className="flex gap-3 mt-3 flex-wrap">
-              <p className="text-xl flex items-center font-bold px-3 text-gray-500 border rounded-3xl border-black">
+              <p className="text-xl flex items-center font-bold px-3 text-gray-500 border rounded-3xl">
                 REACT
               </p>
-              <p className="text-xl font-bold text-gray-500 py-1 px-3 border rounded-3xl border-black">
+              <p className="text-xl font-bold text-gray-500 py-1 px-3 border rounded-3xl">
                 TAILWINDCSS
               </p>
-              <p className="text-xl font-bold text-gray-500 py-1 px-3 border rounded-3xl border-black">
+              <p className="text-xl font-bold text-gray-500 py-1 px-3 border rounded-3xl">
                 COUNTRY API
               </p>
             </div>
