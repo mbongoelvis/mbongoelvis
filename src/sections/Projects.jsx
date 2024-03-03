@@ -15,7 +15,7 @@ export const Projects = () => {
           >
             <div className="w-full h-full overflow-hidden">
               <img
-                src="public/countryAPI.png"
+                src="countryAPI.png"
                 alt=""
                 className="group-hover:scale-[1.1] transition ease-in-out object-cover"
               />
