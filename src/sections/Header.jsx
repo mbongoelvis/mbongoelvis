@@ -95,16 +95,37 @@ export const Header = () => {
           }
         >
           <div className="min-w-12 h-[40vh] flex flex-col gap-5 items-center text-3xl">
-            <a href="#" className="mobile-link">
+            <a
+              href="#"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+              className="mobile-link"
+            >
               Home
             </a>
-            <a href="#about" className="mobile-link">
+            <a
+              href="#about"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+              className="mobile-link"
+            >
               About
             </a>
-            <a href="#projects" className="mobile-link">
+            <a
+              href="#projects"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+              className="mobile-link"
+            >
               Project
             </a>
             <a
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
               href="./public/MBONGO Elvis M Web Developer +237671267490-4.pdf"
               className="mobile-link"
               download
@@ -113,6 +134,9 @@ export const Header = () => {
             </a>
             {/* let talk obile btn */}
             <a
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
               href="#lets-talk"
               className="px-10 rounded-xl text-lg py-3 bg-black text-white ld ld-bounce-in mobile-link"
             >
