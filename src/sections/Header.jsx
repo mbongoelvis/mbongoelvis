@@ -90,7 +90,7 @@ export const Header = () => {
         <div
           className={
             isOpen
-              ? "w-[100vw] lg:hidden absolute z-[100] opacity-1 left-0 top-[4rem] min-h-screen bg-white flex mobile-menu items-center justify-center transition-opacity"
+              ? "w-[100vw] lg:hidden absolute z-[100] opacity-1 left-0 top-[4rem] min-h-screen bg-white flex mobile-menu items-center justify-center transition-all ease-in-out"
               : "hidden"
           }
         >
