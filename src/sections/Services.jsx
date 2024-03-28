@@ -1,4 +1,5 @@
 import React from 'react'
+import { TextSlider } from '../component/TextSlider';
 
 export const 
 Services = () => {
@@ -20,7 +21,7 @@ Services = () => {
             </div>
             <div>
               <p className="opacity-[.6] font-bold lg:text-[3vw] md:text-[5vw] text-[7vw]">
-                Frontend web development
+                Frontend Web Development
               </p>
               <p className="opacity-[.6] font-bold lg:text-[3vw] md:text-[5vw] text-[7vw]">
                 Web Design

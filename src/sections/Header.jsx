@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { TextSlider } from "../component/TextSlider";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,21 +31,21 @@ export const Header = () => {
         </div>
         {/* links */}
         <div className="links gap-[4rem] hidden lg:flex h-full">
-          <a href="#" className="link">
-            Home
+          <a href="#" className="link h-full">
+            <TextSlider text={"Home"} />
           </a>
           <a href="#about" className="link">
-            About
+            <TextSlider text={"About"} />
           </a>
           <a href="#projects" className="link">
-            Project
+            <TextSlider text={"Projects"} />
           </a>
           <a
             href="MBONGO Elvis M Web Developer +237671267490-4.pdf"
             className="link"
             download
           >
-            Download CV
+            <TextSlider text={"Download CV"} />
           </a>
           {/* cursor */}
           <div className="cursor" ref={cursor}></div>
@@ -54,7 +55,7 @@ export const Header = () => {
           href="#lets-talk"
           className="px-10 rounded-xl hidden lg:flex py-3 bg-black text-white ld ld-bounce-in"
         >
-          Let talk
+          <TextSlider text={"Let's Talk"} />
         </a>
 
         {/* mobile menu */}

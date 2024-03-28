@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { TextSlider } from "../component/TextSlider";
 
 export const Contact = () => {
     const time = useRef(null)
@@ -79,8 +80,12 @@ export const Contact = () => {
           <div class="w-full lg:w-[20%] h-full flex flex-col gap-[5rem]">
             <div>
               <h2 class="text-3xl font-bold">Contact Details</h2>
-              <p class="mt-3 text-xl opacity-[.6]">mbongombongo4@gmail.com</p>
-              <p class="mt-3 text-xl opacity-[.6]">+237671267490</p>
+              <p class="mt-3 text-xl opacity-[.6]">
+                <TextSlider text={"mbongombongo4@gmail.com"} />
+              </p>
+              <p class="mt-3 text-xl opacity-[.6]">
+                <TextSlider text={"+237671267490"} />
+              </p>
             </div>
             <div>
               <h2 class="text-3xl font-bold mb-4">Socials</h2>
@@ -90,11 +95,11 @@ export const Contact = () => {
                 class="flex items-center gap-2 mb-5"
               >
                 <img src="whatsapp.png" class="w-6" alt="" />
-                <p>Whatsapp</p>
+                <TextSlider text={"Whatsapp"} />
               </a>
               <a href="#" target="_blank" class="flex items-center gap-2 mb-5">
                 <img src="instagram(1).png" class="w-6" alt="" />
-                <p>Instagram</p>
+                <TextSlider text={"Instagram"} />
               </a>
               <a
                 href="https://github.com/mbongoelvis"
@@ -102,7 +107,7 @@ export const Contact = () => {
                 class="flex items-center gap-2 mb-5"
               >
                 <img src="github(1).png" class="w-6" alt="" />
-                <p>Github</p>
+                <TextSlider text={"Github"} />
               </a>
               <a
                 href="https://www.linkedin.com/in/mbongo-elvis/"
@@ -110,7 +115,7 @@ export const Contact = () => {
                 class="flex items-center gap-2"
               >
                 <img src="linkedin(1).png" class="w-6" alt="" />
-                <p>LinkedIn</p>
+                <TextSlider text={"LinkedIn"} />
               </a>
             </div>
             <div>

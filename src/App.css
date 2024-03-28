@@ -27,6 +27,7 @@
   border-radius: 500px;
   /* border: 1px solid gray; */
   transform-origin: 100% 100%;
+  display: none;
 }
 .cursor-grow{
   transform: scale(2.5);
@@ -36,4 +37,31 @@
 .mobile-menu{
   transition: .7s linear ease-in-out;
   transform-origin: top;
+}
+
+.hero-text{
+  animation: fadeIn .7s linear forwards;
+}
+.normal-text{
+  animation: fadeIn .7s linear forwards;
+  animation-delay: .2s;
+}
+.normal-text2{
+  animation: fadeIn .7s linear forwards;
+  animation-delay: .3s;
+}
+.normal-text3{
+  animation: fadeIn .7s linear forwards;
+  animation-delay: .4s;
+}
+/* animations */
+@keyframes fadeIn{
+  0%{
+    filter: blur(10px);
+    transform: translateY(30px);
+  }
+  100%{
+    filter: blur(0);
+    transform: translateY(0px);
+  }
 }
